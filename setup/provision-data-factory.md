@@ -23,4 +23,4 @@
 
     ![Notifications](../media/1-provision/3.png)
 
-1. Click on **Author & Monitor** to navigate to the Azure Data Factory web framework. This is where ADF development will take place.
+1. Click on **Author & Monitor** to navigate to the Azure Data Factory web workspace. This is where ADF development will take place.

@@ -25,7 +25,7 @@
 
 1. Click the **Review + create** button, then click the **Create** button.
 
-1. Back in the ADF framework Overview page, click the **Create pipeline from template** icon.
+1. Back in the ADF workspace Overview page, click the **Create pipeline from template** icon.
 
     ![Create pipeline from template](../media/2-repo/4.png)
 
