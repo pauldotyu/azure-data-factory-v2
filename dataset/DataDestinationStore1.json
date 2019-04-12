@@ -1,0 +1,23 @@
+{
+	"name": "DataDestinationStore1",
+	"properties": {
+		"description": "Connection to your Azure Data Lake Store.",
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlobFSFile",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"folderPath": "froms3"
+		}
+	}
+}
