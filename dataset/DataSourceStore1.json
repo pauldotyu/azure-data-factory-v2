@@ -1,0 +1,23 @@
+{
+	"name": "DataSourceStore1",
+	"properties": {
+		"description": "Connection your Amazon S3 store.",
+		"linkedServiceName": {
+			"referenceName": "AmazonS31",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AmazonS3Object",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"bucketName": "pybucket0412"
+		}
+	}
+}
