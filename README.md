@@ -1,6 +1,8 @@
 
 # Azure Data Factory V2 Walkthrough
 
+We will walk-through the steps of provisioning a new Azure Data Factory instance and configuring a simple pipeline to copy files from S3 buckets to Azure Data Lake Gen 2
+
 ## [Provision Data Factory](setup/provision-data-factory.md)
 
 ## [Configure Git Repository](setup/configure-git-repo.md)
