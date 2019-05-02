@@ -1,0 +1,16 @@
+{
+	"name": "FileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "c:\\Temp",
+			"userId": "northamerica\\pauyu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyYjQ5ZTYzMC1jZDI3LTQ5ODgtYWFhZS1iMWNhZDFhY2M4NGQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
