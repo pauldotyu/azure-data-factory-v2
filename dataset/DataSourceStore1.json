@@ -6,18 +6,21 @@
 			"referenceName": "AmazonS31",
 			"type": "LinkedServiceReference"
 		},
+		"annotations": [],
 		"type": "AmazonS3Object",
 		"typeProperties": {
 			"format": {
 				"type": "TextFormat",
 				"columnDelimiter": ",",
-				"rowDelimiter": "",
+				"quoteChar": "\"",
 				"nullValue": "\\N",
+				"encodingName": null,
 				"treatEmptyAsNull": true,
 				"skipLineCount": 0,
-				"firstRowAsHeader": false
+				"firstRowAsHeader": true
 			},
-			"bucketName": "pybucket0412"
+			"prefix": "",
+			"bucketName": "pymovies"
 		}
 	}
 }
