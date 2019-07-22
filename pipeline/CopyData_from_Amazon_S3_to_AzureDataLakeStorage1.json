@@ -4,9 +4,9 @@
 		"description": "Copy data from Amazon S3 to Azure Data Lake Storage.\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
 		"activities": [
 			{
-				"name": "AmazonS3_to_Azure",
-				"description": "Copy data from Amazon S3 to Azure Data Lake Storage.",
+				"name": "Copy Data1",
 				"type": "Copy",
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -14,16 +14,24 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "FileSystemSource",
 						"recursive": true
 					},
 					"sink": {
-						"type": "AzureBlobFSSink"
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSetting"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSetting",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
 					},
-					"enableStaging": false,
-					"dataIntegrationUnits": 0
+					"enableStaging": false
 				},
 				"inputs": [
 					{
@@ -33,11 +41,12 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DataDestinationStore1",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				]
 			}
-		]
+		],
+		"annotations": []
 	}
 }
