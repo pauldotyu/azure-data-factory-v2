@@ -35,13 +35,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DataSourceStore1",
+						"referenceName": "AmazonS3Bucket",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "MoviesADLS",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,5 +1,5 @@
 {
-	"name": "DataSourceStore1",
+	"name": "AmazonS3Bucket",
 	"properties": {
 		"description": "Connection your Amazon S3 store.",
 		"linkedServiceName": {
