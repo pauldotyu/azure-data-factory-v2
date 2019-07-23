@@ -4,7 +4,7 @@
 		"description": "Copy data from Amazon S3 to Azure Data Lake Storage.\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
 		"activities": [
 			{
-				"name": "Copy Data from Amazon S3",
+				"name": "MoveFromS3ToADLS",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -47,9 +47,16 @@
 				]
 			},
 			{
-				"name": "dataflow2",
+				"name": "AggregateAndWriteToDW",
 				"type": "ExecuteDataFlow",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "MoveFromS3ToADLS",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
